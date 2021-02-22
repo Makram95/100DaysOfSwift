@@ -55,6 +55,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         let center = UNUserNotificationCenter.current()
         center.delegate = self
         
+        
         let show = UNNotificationAction(identifier: "show", title: "Tell me more...", options: .foreground)
         
         let category = UNNotificationCategory(identifier: "alarm", actions: [show], intentIdentifiers: [], options: [])
